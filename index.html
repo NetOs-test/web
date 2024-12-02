@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetOs</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="Imagenes/netoslogo.png" alt="Logo Bodega Grecia" />
+                <h1>NetOs</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="ubicacion.html">Ubicación</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Barra de Título -->
+    <div class="title-bar">
+        <h2>¡Bienvenidos a NetOs!</h2>
+    </div>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="Imagenes/slide1.jpg" alt="Imagen 1">
+                <div class="rectangle-overlay">
+                    <span class="welcome-text">¡Bienvenidos a NetOs!<br>"¡Tu tienda de tecnología confiable!"</span>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="Imagenes/slide2.jpg" alt="Imagen 2">
+                <div class="rectangle-overlay">
+                    <span class="welcome-text">La Calidad que Mereces<br>"En NetOs, tu satisfacción es nuestra prioridad. ¡Bienvenido y disfruta de la calidad y precios!"</span>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="Imagenes/slide3.jpg" alt="Imagen 3">
+                <div class="rectangle-overlay">
+                    <span class="welcome-text">Nuevos Productos<br>"¡Nuevas incorporaciones! Descubre los últimos productos en nuestra tienda."</span>
+                </div>
+            </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    <!-- Productos Destacados -->
+    <section class="featured-products">
+        <h2>Productos Destacados</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="Imagenes/mmorias.jpg" alt="Producto 1">
+                <h3>Fury Beast DDR4</h3>
+                <p>Memoria RAM </p>
+                <p>Precio: S/110.70</p>
+            </div>
+            <div class="product-item">
+                <img src="Imagenes/procesadores.webp" alt="Producto 2">
+                <h3>Intel Core™ i3-10100F</h3>
+                <p>Procesador</p>
+                <p>Precio: S/341.00</p>
+            </div>
+            <div class="product-item">
+                <img src="Imagenes/tarjetas.jpeg" alt="Producto 3">
+                <h3>GeForce GTX</h3>
+                <p>Tarjeta Gráfica.</p>
+                <p>Precio: S/130.00</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="widget">
+                <h3>Suscríbete a nuestro boletín</h3>
+                <form>
+                    <input type="email" placeholder="Ingresa tu email">
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+            <div class="widget">
+                <h3>Síguenos</h3>
+                <ul class="social-media">
+                    <li><a href="#"><img src="Imagenes/fb_icon.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="Imagenes/x_icon.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="Imagenes/ig_icon.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+            <div class="widget">
+                <h3>Ubicación</h3>
+                <p>123 Calle Principal, Ciudad, País</p>
+                <div id="mapa"></div>
+            </div>
+            <div class="widget">
+                <h3>Contacto</h3>
+                <p>Teléfono: +51 903 079 754</p>
+                <p>Email: <a href="mailto:contacto@netos.com">contacto@netos.com</a></p>
+            </div>
+        </div>
+        <p>&copy; 2024 NetOs. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelector('.slides');
+            const totalSlides = document.querySelectorAll('.slide').length;
+            if (index >= totalSlides) slideIndex = 0;
+            else if (index < 0) slideIndex = totalSlides - 1;
+            else slideIndex = index;
+
+            const offset = -slideIndex * 100;
+            slides.style.transform = `translateX(${offset}%)`;
+        }
+
+        function moveSlide(step) {
+            showSlide(slideIndex + step);
+        }
+
+        // Mostrar el primer slide por defecto
+        showSlide(slideIndex);
+    </script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetOs</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="Imagenes/netoslogo.png" alt="Logo NetOs" />
+                <h1>NetOs</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="ubicacion.html">Ubicación</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="products-container">
+            <aside class="sidebar">
+                <h2>Filtrar Productos</h2>
+                <div class="filter-section">
+                    <h3>Categorías</h3>
+                    <ul>
+                        <li><a href="#">Laptop</a></li>
+                        <li><a href="#">Laptop Gamer</a></li>
+                        <li><a href="#">Línea Empresarial</a></li>
+                    </ul>
+                </div>
+                <div class="filter-section">
+                    <h3>Rango de Precio</h3>
+                    <form>
+                        <label for="min-price">Precio Mínimo:</label>
+                        <input type="number" id="min-price" name="min-price" placeholder="0">
+                        <label for="max-price">Precio Máximo:</label>
+                        <input type="number" id="max-price" name="max-price" placeholder="100">
+                        <button type="submit">Filtrar</button>
+                    </form>
+                </div>
+                <div class="filter-section">
+                    <h3>Productos Destacados</h3>
+                    <div class="featured-products">
+                        <div class="featured-item">
+                            <img src="Imagenes/mmorias.jpg" alt="Producto Destacado 1">
+                            <h4>Fury Beast DDR4</h4>
+                            <p>Memora RAM</p>
+                            <p class="price">S/110.00</p>
+                        </div>
+                        <div class="featured-item">
+                            <img src="Imagenes/procesadores.webp" alt="Producto Destacado 2">
+                            <h4>Intel Core™ i3-10100F</h4>
+                            <p>Procesador</p>
+                            <p class="price">S/341.00</p>
+                        </div>
+                        <div class="featured-item">
+                            <img src="Imagenes/tarjetas.jpeg" alt="Producto Destacado 3">
+                            <h4>GeForce GTX</h4>
+                            <p>Tarjeta Gráfica</p>
+                            <p class="price">S/130.00</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="products-list">
+                <h2>Productos</h2>
+                <div class="product-grid">
+                    <!-- Producto 1 -->
+                    <div class="product-item">
+                        <img src="Imagenes/procesadores.webp" alt="Producto 1">
+                        <h3>Intel Core™ i3-10100F</h3>
+                        <p>Procesador</p>
+                        <p class="price">S/341.00</p>
+                    </div>
+                    <!-- Producto 2 -->
+                    <div class="product-item">
+                        <img src="Imagenes/mmorias.jpg" alt="Producto 2">
+                        <h3>Fury Beast DDR4</h3>
+                        <p>Memoria RAM.</p>
+                        <p class="price">S/110.00</p>
+                    </div>
+                    <!-- Producto 3 -->
+                    <div class="product-item">
+                        <img src="Imagenes/tarjetas.jpeg" alt="Producto 3">
+                        <h3>GeForce GTX</h3>
+                        <p>Tarjeta Gráfica</p>
+                        <p class="price">S/110.00</p>
+                    </div>
+                    <!-- Producto 4 -->
+                    <div class="product-item">
+                        <img src="Imagenes/lapgamer1.webp" alt="Producto 4">
+                        <h3>HP</h3>
+                        <p>Laptp Gamer </p>
+                        <p class="price">S/2079</p>
+                    </div>
+                    <!-- Producto 5 -->
+                    <div class="product-item">
+                        <img src="Imagenes/mous.jpg" alt="Producto 5">
+                        <h3>HAVIT MS72</h3>
+                        <p>Mouse Gamer</p>
+                        <p class="price">S/20.00</p>
+                    </div>
+                    <!-- Producto 6 -->
+                    <div class="product-item">
+                        <img src="Imagenes/madre.jpg" alt="Producto 6">
+                        <h3>Asus PRIME A520M-K</h3>
+                        <p>Placa Madre</p>
+                        <p class="price">S/241.00</p>
+                    </div>
+                    <!-- Producto 7 -->
+                    <div class="product-item">
+                        <img src="Imagenes/fuente.jpg" alt="Producto 7">
+                        <h3>IFORGAME AK700 </h3>
+                        <p>Fuente de poder</p>
+                        <p class="price">S/199.00</p>
+                    </div>
+                    <!-- Producto 8 -->
+                    <div class="product-item">
+                        <img src="Imagenes/ssd.jpg" alt="Producto 8">
+                        <h3>Kingston A400</h3>
+                        <p>Unidad SSD</p>
+                        <p class="price">S/.120.00</p>
+                    </div>
+                    <!-- Producto 9 -->
+                    <div class="product-item">
+                        <img src="Imagenes/discod.jpg" alt="Producto 9">
+                        <h3>Wester Digital Blue</h3>
+                        <p> Disco Duro Interno</p>
+                        <p class="price">S/.221.00</p>
+                    </div>
+                    <!-- Producto 10 -->
+                    <div class="product-item">
+                        <img src="Imagenes/moni.jpg" alt="Producto 10">
+                        <h3>Teros TE-2412S</h3>
+                        <p>Monitor</p>
+                        <p class="price">S/.291.00</p>
+                    </div>
+                    <!-- Producto 11 -->
+                    <div class="product-item">
+                        <img src="Imagenes/audi.jpg" alt="Producto 11">
+                        <h3>Antryx IRIS-W GRAY</h3>
+                        <p>Aufifono Gamer</p>
+                        <p class="price">S/.100.00</p>
+                    </div>
+                    <!-- Producto 12 -->
+                    <div class="product-item">
+                        <img src="Imagenes/teclado.jpg" alt="Producto 12">
+                        <h3>T-DAGGER TANKER RAINBOW</h3>
+                        <p>Teclado Gamer</p>
+                        <p class="price">S/.50.00</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+<footer>
+    <div class="footer-container">
+        <div class="widget">
+            <h3>Suscríbete a nuestro boletín</h3>
+            <form>
+                <input type="email" placeholder="Ingresa tu email">
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+        <div class="widget">
+            <h3>Síguenos</h3>
+            <ul class="social-media">
+                <li><a href="#"><img src="Imagenes/fb_icon.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="Imagenes/x_icon.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="Imagenes/ig_icon.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
+        <div class="widget">
+            <h3>Ubicación</h3>
+            <p>123 Calle Principal, Ciudad, País</p>
+            <div id="mapa"></div>
+        </div>
+        <div class="widget">
+            <h3>Contacto</h3>
+            <p>Teléfono: +51 903 079 754</p>
+            <p>Email: <a href="mailto:contacto@netos.com">contacto@netos.com</a></p>
+        </div>
+    </div>
+    <p>&copy; 2024 NetOs. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

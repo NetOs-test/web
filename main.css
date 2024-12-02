@@ -1,0 +1,337 @@
+/* Estilo de enlaces (links) y menús */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF9900; /* Naranja para el efecto hover */
+    text-decoration: underline;
+}
+
+nav ul li a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FF9900; /* Naranja para el efecto hover */
+    text-decoration: underline;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente por defecto para el cuerpo del texto */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Estilo de encabezados */
+header h1, .slider h2, .trending-products h2, .categories h2 {
+    font-family: 'Montserrat', sans-serif; /* Fuente para encabezados */
+}
+
+footer h3 {
+    font-family: 'Poppins', sans-serif; /* Fuente para títulos en el pie de página */
+}
+
+section p {
+    font-family: 'Open Sans', sans-serif; /* Fuente para párrafos */
+}
+
+section h2 {
+    font-family: 'Lora', serif; /* Fuente para subtítulos */
+}
+
+header {
+    background-color: #e64f21; /* Marrón claro */
+    color: white;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 20%;
+    margin-right: 5px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Rectángulo transparente */
+.rectangle-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* Fondo blanco semitransparente */
+    border-radius: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 500;
+}
+
+.welcome-text {
+    font-size: 36px; /* Ajusta el tamaño de fuente según sea necesario */
+    font-weight: bold;
+}
+
+/* Estilos básicos para el slider */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ajusta la altura según sea necesario */
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Barra de Título */
+.title-bar {
+    width: 100%;
+    background-color: #6DBE45; /* Verde de la paleta */
+    padding: 15px 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Lobster', cursive;
+}
+
+.title-bar h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.rectangle-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Blanco semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.welcome-text {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* Productos Destacados */
+.featured-products {
+    padding: 20px;
+    background-color: #f1f1f1; /* Color gris claro */
+}
+
+.featured-products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Lobster', cursive;
+    color: #6DBE45; /* Verde de la paleta */
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-item {
+    width: 30%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Productos Destacados */
+.product-item img {
+    max-width: 100%;
+    height: 200px; /* Tamaño fijo para las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    border-bottom: 2px solid #6DBE45; /* Verde de la paleta */
+}
+
+.product-item h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+footer {
+    background-color: #4CAF50; /* Verde claro */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.widget {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.widget h3 {
+    margin-top: 0;
+}
+
+.widget form input[type="email"] {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.widget form button {
+    padding: 5px 10px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.widget form button:hover {
+    background-color: #FF9900; /* Naranja para el efecto hover */
+}
+
+.social-media {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra los íconos */
+}
+
+.social-media li {
+    margin: 0 10px;
+}
+
+.social-media li a img {
+    width: 24px;
+    height: 24px;
+}
